@@ -1,0 +1,47 @@
+.topimage{
+  text-align: center;
+}
+.main{
+  text-align: center;
+}
+.info ul{
+  list-style: none;
+  border: 1px solid #1d2087;
+  width:1000px;
+  padding: 20px 0 20px 20px;
+  margin: auto;
+}
+.info h2{
+  text-align: center;
+}
+.info ul li{
+  font-size: 18px;
+  border-bottom: 1px dotted gray;
+  padding: 5px 0;
+}
+.info ul li:last-child{
+  border-bottom: none;
+}
+.info li span{
+  color:white;
+  background-color: orange;
+  font-size: 14px;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width:768px){
+.topimage img{
+  max-width: 50%;
+  height: auto;
+}
+}
+@media screen and (max-width:768px) {
+.topimage img{
+  max-width: 100%;
+  height: auto;
+}
+.info ul{
+  width: auto;
+}
+}
