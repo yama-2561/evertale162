@@ -1,0 +1,22 @@
+h2{
+  text-align: center;
+}
+.grouplist{
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.gl2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gl2 img{
+  max-width: 100%;
+  height: auto;
+}
