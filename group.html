@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="group.css">
+    <title>Evertale J-162 まとめサイト</title>
+  </head>
+  <body>
+    <header>
+      <h1>Evertale J-162 まとめサイト</h1>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="pc">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="group.html">天下グループ分け</a></li>
+          <li><a href="cross.html">クロスサーバー履歴</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <h2>過去の天下統一戦の162だけのグループ分け表を表示します</h2>
+    <div class="grouplist">
+      <p>表示させたい年月を選択してください</p>
+      <select name="tgroup" id="tgroup" onchange="viewChange();">
+        <option value="000000">-- 選択してください --</option>
+        <option value="202511">2025年11月</option>
+        <option value="202512">2025年12月</option>
+        <option value="202601">2025年1月</option>
+        <option value="202602">2026年2月</option>
+        <option value="202603">2026年3月</option>
+        <option value="202604">2026年4月</option>
+      </select>
+    </div>
+    <div class="gl2">
+      <div id="2511" class="gl2" style="display: none;">
+        <img src="images/20251119.png">
+        <img src="images/20251126.png">
+      </div>
+      <div id="2512" class="gl2" style="display: none;">
+        <img src="images/20251203.png">
+        <img src="images/20251210.png">
+        <img src="images/20251217.png">
+        <img src="images/20251224.png">
+        <img src="images/20251231.png">
+      </div>
+      <div id="2601" class="gl2" style="display: none;">
+        <img src="images/20260107.png">
+        <img src="images/20260114.png">
+        <img src="images/20260121.png">
+        <img src="images/20260128.png">
+      </div>
+      <div id="2602" class="gl2" style="display: none;">
+        <img src="images/20260204.png">
+        <img src="images/20260211.png">
+        <img src="images/20260216.png">
+        <img src="images/20260225.png">
+      </div>
+      <div id="2603" class="gl2" style="display: none;">
+        <img src="images/20260304.png">
+        <img src="images/20260318.png">
+        <img src="images/20260325.png">
+      </div>
+      <div id="2604" class="gl2" style="display: none;">
+        <img src="images/20260401.png">
+        <img src="images/20260408.png">
+        <img src="images/20260415.png">
+        <img src="images/20260422.png">
+      </div>
+    </div>
+    <script src="group.js"></script>
+  </body>
+</html>
