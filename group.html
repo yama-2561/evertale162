@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="group.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/group.css">
     <title>Evertale J-162 まとめサイト</title>
   </head>
   <body>
@@ -16,6 +16,7 @@
         <div class="pc">
         <ul>
           <li><a href="index.html">ホーム</a></li>
+          <li><a href="capital.html">王都争奪戦結果</a></li>
           <li><a href="group.html">天下グループ分け</a></li>
           <li><a href="cross.html">クロスサーバー履歴</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
@@ -28,6 +29,7 @@
       <p>表示させたい年月を選択してください</p>
       <select name="tgroup" id="tgroup" onchange="viewChange();">
         <option value="000000">-- 選択してください --</option>
+        <option value="202506">2025年6月</option>
         <option value="202511">2025年11月</option>
         <option value="202512">2025年12月</option>
         <option value="202601">2025年1月</option>
@@ -37,7 +39,11 @@
       </select>
     </div>
     <div class="gl2">
+      <div id="2506" class="gl2" style="display: none;">
+        <img src="images/20250611.png">
+      </div>
       <div id="2511" class="gl2" style="display: none;">
+        <img src="images/20251112.png">
         <img src="images/20251119.png">
         <img src="images/20251126.png">
       </div>
@@ -73,6 +79,6 @@
         <img src="images/20260429.png">
       </div>
     </div>
-    <script src="group.js"></script>
+    <script src="js/group.js"></script>
   </body>
 </html>

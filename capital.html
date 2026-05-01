@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/capital.css">
+    <title>Evertale J-162 まとめサイト</title>
+  </head>
+  <body>
+    <header>
+      <h1>Evertale J-162 まとめサイト</h1>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="pc">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="capital.html">王都争奪戦結果</a></li>
+          <li><a href="group.html">天下グループ分け</a></li>
+          <li><a href="cross.html">クロスサーバー履歴</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <h2>過去のJ-162王都争奪戦の結果を表示します</h2>
+    <div class="grouplist">
+      <p>表示させたい年月を選択してください</p>
+      <select name="tgroup" id="tgroup" onchange="viewChange();">
+        <option value="000000">-- 選択してください --</option>
+        <option value="202502">2025年02月19日~</option>
+        <option value="202603">2026年03月04日~2026年05月11日</option>
+      </select>
+    </div>
+    <div class="gl2">
+      <div id="2502" class="gl2" style="display: none;">
+        <img src="images/Capital/20250219c.png">
+      </div>
+      <div id="2603" class="gl2" style="display: none;">
+        <img src="images/Capital/20260304c.png">
+        <img src="images/Capital/20260318c.png">
+        <img src="images/Capital/20260401c.png">
+        <img src="images/Capital/20260415c.png">
+      </div>
+    </div>
+    <script src="js/capital.js"></script>
+  </body>
+</html>
